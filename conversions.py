@@ -17,8 +17,8 @@ def convertCelsiusToKelvin(temp):
     return float("%.3f" % total)
     
 
-def convertCelsiusToFarenheit(temp):
-    """A conversion from Celsius to Farenheit.
+def convertCelsiusToFahrenheit(temp):
+    """A conversion from Celsius to Fahrenheit.
     Args:
         total(int): formula to calculate conversion
     Return: a float value of conversion
@@ -30,26 +30,26 @@ def convertCelsiusToFarenheit(temp):
     return float("%.3f" % total)
 
 
-def convertFarenheitToKelvin(temp):
-    """A conversion from Farenheit to Kelvin.
+def convertFahrenheitToKelvin(temp):
+    """A conversion from Fahrenheit to Kelvin.
     Args:
         total(int): formula to calculate conversion
     Return: a float value of conversion
     Example:
-        >>> convertFarenheitToKelvin(300)
+        >>> convertFahrenheitToKelvin(300)
         422.039
     """
     total = ((temp - 32) / 1.8) + 273.15
     return float("%.3f" % total)
 
 
-def convertFarenheitToCelsius(temp):
+def convertFahrenheitToCelsius(temp):
     """A conversion from Farenheit to Celsius.
     Args:
         total(int): formula to calculate conversion
     Return: a float value of conversion
     Example:
-        >>> convertFarenheitToCelsius(300)
+        >>> convertFahrenheitToCelsius(300)
     148.889
     """
     total = (temp - 32) / 1.8
@@ -69,13 +69,13 @@ def convertKelvinToCelsius(temp):
     return float("%.3f" % total)
     
 
-def convertKelvinToFarenheit(temp):
-    """A conversion from Kelvin to Farenheit.
+def convertKelvinToFahrenheit(temp):
+    """A conversion from Kelvin to Fahrenheit.
     Args:
         total(int): formula to calculate conversion
     Return: a float value of conversion
     Example:
-        >>> convertKelvinToFarenheit(300)
+        >>> convertKelvinToFahrenheit(300)
     80.33
     """
     total = (temp - 273.15) * 1.8 + 32

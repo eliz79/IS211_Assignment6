@@ -41,99 +41,99 @@ class CelsiusToKelvin(unittest.TestCase): # subclassing TestCase
         self.assertEqual(568163.15, results)
         
     
-class CelsiusToFarenheit(unittest.TestCase): # subclassing TestCase
+class CelsiusToFahrenheit(unittest.TestCase): # subclassing TestCase
 
 
     def test_pos(self):
         "Test for positive input."
-        results = conversions.convertCelsiusToFarenheit(300)
+        results = conversions.convertCelsiusToFahrenheit(300)
         self.assertEqual(572.0, results)
         
 
     def test_neg(self):
         "Test for negative input."
-        results = conversions.convertCelsiusToFarenheit(-300)
+        results = conversions.convertCelsiusToFahrenheit(-300)
         self.assertEqual(-508.0, results)
         
 
     def test_zero(self):
         "Test for zero input."
-        results = conversions.convertCelsiusToFarenheit(0)
+        results = conversions.convertCelsiusToFahrenheit(0)
         self.assertEqual(32.0, results)
         
 
     def test_non_whole_num(self):
         "Test for non-whole input."
-        results = conversions.convertCelsiusToFarenheit(1.005)
+        results = conversions.convertCelsiusToFahrenheit(1.005)
         self.assertEquals(33.809, results)
         
 
     def test_large(self):
         "Test for large input."
-        results = conversions.convertCelsiusToFarenheit(567890)
+        results = conversions.convertCelsiusToFahrenheit(567890)
         self.assertEqual(1022234.0, results)
 
-class FarenheitToKelvin(unittest.TestCase): # subclassing TestCase
+class FharenheitToKelvin(unittest.TestCase): # subclassing TestCase
 
 
     def test_pos(self):
         "Test for positive input."
-        results = conversions.convertFarenheitToKelvin(300)
+        results = conversions.convertFahrenheitToKelvin(300)
         self.assertEqual(422.039, results)
         
 
     def test_neg(self):
         "Test for negative input."
-        results = conversions.convertFarenheitToKelvin(-300)
+        results = conversions.convertFahrenheitToKelvin(-300)
         self.assertEqual(88.706, results)
         
 
     def test_zero(self):
         "Test for zero input."
-        results = conversions.convertFarenheitToKelvin(0)
+        results = conversions.convertFahrenheitToKelvin(0)
         self.assertEqual(255.372, results)
         
 
     def test_non_whole_num(self):
         "Test for non-whole input."
-        results = conversions.convertFarenheitToKelvin(1.005)
+        results = conversions.convertFahrenheitToKelvin(1.005)
         self.assertEquals(255.931, results)
         
 
     def test_large(self):
         "Test for large input."
-        results = conversions.convertFarenheitToKelvin(567890)
+        results = conversions.convertFahrenheitToKelvin(567890)
         self.assertEqual(315749.817, results)
 
-class FarenheitToCelsius(unittest.TestCase): # subclassing TestCase
+class FahrenheitToCelsius(unittest.TestCase): # subclassing TestCase
 
     def test_pos(self):
         "Test for positive input."
-        results = conversions.convertFarenheitToCelsius(300)
+        results = conversions.convertFahrenheitToCelsius(300)
         self.assertEqual(148.889, results)
         
 
     def test_neg(self):
         "Test for negative input."
-        results = conversions.convertFarenheitToCelsius(-300)
+        results = conversions.convertFahrenheitToCelsius(-300)
         self.assertEqual(-184.444, results)
         
 
     def test_zero(self):
         "Test for zero input."
-        results = conversions.convertFarenheitToCelsius(0)
+        results = conversions.convertFahrenheitToCelsius(0)
         self.assertEqual(-17.778, results)
         
 
     def test_non_whole_num(self):
         "Test for non-whole input."
-        results = conversions.convertFarenheitToCelsius(1.005)
+        results = conversions.convertFahrenheitToCelsius(1.005)
         self.assertEquals(-17.219, results)
         
 
     def test_large(self):
         "Test for large input."
-        results = conversions.convertFarenheitToCelsius(567890)
+        results = conversions.convertFahrenheitToCelsius(567890)
         self.assertEqual(315476.667, results)
         
 class KelvinToCelsius(unittest.TestCase): # subclassing TestCase
@@ -167,36 +167,36 @@ class KelvinToCelsius(unittest.TestCase): # subclassing TestCase
         results = conversions.convertKelvinToCelsius(567890)
         self.assertEqual(567616.85, results)
         
-class KelvinToFarenheit(unittest.TestCase): # subclassing TestCase
+class KelvinToFahrenheit(unittest.TestCase): # subclassing TestCase
     
 
     def test_pos(self):
         "Test for positive input."
-        results = conversions.convertKelvinToFarenheit(300)
+        results = conversions.convertKelvinToFahrenheit(300)
         self.assertEqual(80.33, results)
         
 
     def test_neg(self):
         "Test for negative input."
-        results = conversions.convertKelvinToFarenheit(-300)
+        results = conversions.convertKelvinToFahrenheit(-300)
         self.assertEqual(-999.67, results)
         
 
     def test_zero(self):
         "Test for zero input."
-        results = conversions.convertKelvinToFarenheit(0)
+        results = conversions.convertKelvinToFahrenheit(0)
         self.assertEqual(-459.67, results)
         
 
     def test_non_whole_num(self):
         "Test for non-whole input."
-        results = conversions.convertKelvinToFarenheit(1.005)
+        results = conversions.convertKelvinToFahrenheit(1.005)
         self.assertEquals(-457.861, results)
         
 
     def test_large(self):
         "Test for large input."
-        results = conversions.convertKelvinToFarenheit(567890)
+        results = conversions.convertKelvinToFahrenheit(567890)
         self.assertEqual(1021742.33, results)
 
 
