@@ -49,9 +49,9 @@ def convert(from_unit, to_unit, value):
     return float("%0.2f" %ret_val)
 
 
-class ConvertTest(unittest.TestCase):
+class ConvertTests(unittest.TestCase):
 
-    def testTemp(self):
+    def testTemperature(self):
         self.assertEqual(convert('celsius','fahrenheit',0),32.0)
         self.assertEqual(convert('celsius','kelvin',0),273.15)
         self.assertEqual(convert('kelvin','fahrenheit',0),-241.15)
@@ -59,7 +59,7 @@ class ConvertTest(unittest.TestCase):
         self.assertEqual(convert('fahrenheit','celcius',32),0.0)
         self.assertEqual(convert('fahrenheit','kelvin',0),255.37)
 
-    def testDist(self):
+    def testDistance(self):
         self.assertEqual(convert('meter','mile',100),0.06)
         self.assertEqual(convert('meter','yard',10),10.94)
         self.assertEqual(convert('mile','meter',10),16093.4)
@@ -73,7 +73,7 @@ class ConvertTest(unittest.TestCase):
         for test in temp:
             self.assertEqual(convert(test, test, 10), 10)
 
-    def testError(self):
+    def testErrors(self):
         self.assertRaises(ConversionNotPossible,convert,'met','cel',0)
 
 if __name__ == '__main__':
